@@ -10,8 +10,8 @@
 */
 #include <stdio.h>
 
-#define mile_to_km 1.609
-#define gallon_to_liter 3.785
+#define MILE_TO_KM 1.609
+#define GALLON_TO_LITER 3.785
 
 int main(void){
 
@@ -24,8 +24,8 @@ int main(void){
     printf("Please input the oil you spend(in gallon):");
     scanf("%f", &gallon);
 
-    kilometer = mile * mile_to_km;
-    liter = gallon * gallon_to_liter;
+    kilometer = mile * MILE_TO_KM;
+    liter = gallon * GALLON_TO_LITER;
 
     oilwear_USA = mile / gallon;
     oilwear_E = liter / kilometer * 100.0;

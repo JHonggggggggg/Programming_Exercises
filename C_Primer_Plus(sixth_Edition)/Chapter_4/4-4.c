@@ -4,7 +4,7 @@
 */
 #include <stdio.h>
 
-#define inch_to_feet 12
+#define INCH_TO_FEET 12
 
 int main(void){
 
@@ -16,7 +16,7 @@ int main(void){
 
     printf("Hi %s, how tall you are( inch ):", name);
     scanf("%f", &height_inch);
-    height_feet = height_inch / inch_to_feet;
+    height_feet = height_inch / INCH_TO_FEET;
 
     printf("%s, you are %.3f feet tall\n", name, height_feet);
 

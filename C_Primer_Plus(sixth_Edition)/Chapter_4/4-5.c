@@ -7,7 +7,7 @@
 */
 #include <stdio.h>
 
-#define byte_to_bite 8
+#define BYTE_PER_BITE 8
 
 int main(void){
 
@@ -19,7 +19,7 @@ int main(void){
     printf("Please input the file size(megabyte):");
     scanf("%f", &file_size);
 
-    time = file_size * byte_to_bite / net_speed;
+    time = file_size * BYTE_PER_BITE / net_speed;
     printf("At %.2f megabits per second, "
            "a file of %.2f megabytes download in %.2f seconds.\n",
            net_speed, file_size, time);
