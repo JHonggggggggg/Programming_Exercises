@@ -4,7 +4,7 @@
 */
 #include <stdio.h>
 
-#define inch_to_cm 2.54f
+#define INCH_TO_CM 2.54f
 
 int main(void){
 
@@ -12,7 +12,7 @@ int main(void){
     printf("Enter the inch of your height:__\b\b");
     scanf("%f", &inch_height);
 
-    cm_height = inch_height * inch_to_cm;
+    cm_height = inch_height * INCH_TO_CM;
     printf("Hi, your are %.2f inch, or %.2f cm height.\n", inch_height, cm_height);
 
     return 0;

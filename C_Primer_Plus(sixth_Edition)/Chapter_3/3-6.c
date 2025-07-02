@@ -4,7 +4,7 @@
 */
 #include <stdio.h>
 
-#define water_molecule_mass 3e-32L //使用long double提高精度
+#define WATER_MOLECULE_MASS 3e-32L //使用long double提高精度
 
 int main(void){
 
@@ -13,7 +13,7 @@ int main(void){
     scanf("%lf", &quart_quantity);
 
     all_mass = quart_quantity * 950.0;
-    water_molecule_quantity = all_mass / water_molecule_mass;
+    water_molecule_quantity = all_mass / WATER_MOLECULE_MASS;
     printf("There are %e molecules.\n", water_molecule_quantity);
 
     return 0;

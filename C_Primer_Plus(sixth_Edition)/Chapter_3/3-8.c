@@ -5,10 +5,10 @@
 */
 #include <stdio.h>
 
-#define pint_to_cup 2.0f
-#define cup_to_oucne 8.0f
-#define ounce_to_largeTablespoon 2.0f
-#define largeTablespoon_to_teaSpoon 3.0f
+#define PINT_TO_CUP 2.0f
+#define CUP_TO_OUNCE 8.0f
+#define OUNCE_TO_SPOON 2.0f
+#define SPOON_TO_TEASPOON 3.0f
 
 int main(void){
 
@@ -16,10 +16,10 @@ int main(void){
     printf("Enter how many cup:__\b\b");
     scanf("%f", &cup);
 
-    pint = cup / pint_to_cup;
-    ounce = cup * cup_to_oucne;
-    tablespoon = ounce * ounce_to_largeTablespoon;
-    tea_spoon = tablespoon * largeTablespoon_to_teaSpoon;
+    pint = cup / PINT_TO_CUP;
+    ounce = cup * CUP_TO_OUNCE;
+    tablespoon = ounce * OUNCE_TO_SPOON;
+    tea_spoon = tablespoon * SPOON_TO_TEASPOON;
 
     printf("%.1f cup equals %.1f pint, %.1f ounce, %.1f spoon, %.1f tean_spoon",
             cup, pint, ounce, tablespoon, tea_spoon);

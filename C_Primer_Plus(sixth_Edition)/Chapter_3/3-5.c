@@ -5,7 +5,7 @@
 */
 #include <stdio.h>
 
-#define seconds_oneYear 3.156e7
+#define SECONDS_ONEYEAR 3.156e7
 
 int main(void){
 
@@ -14,7 +14,7 @@ int main(void){
     printf("Enter how many years old you are:__\b\b");
     scanf("%f", &age);
 
-    age_seconds = age * seconds_oneYear;
+    age_seconds = age * SECONDS_ONEYEAR;
     printf("You are: %.1f years old.\n", age);
     printf("And you are %e seconds old, too.", age_seconds);
 
